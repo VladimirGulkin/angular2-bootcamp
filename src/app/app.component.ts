@@ -19,28 +19,23 @@ import { AppState } from './app.service';
     <nav>
       <span>
         <a [routerLink]=" ['./'] ">
-          Index
+          Login
         </a>
       </span>
       |
       <span>
-        <a [routerLink]=" ['./home'] ">
-          Home
+        <a [routerLink]=" ['./courses'] ">
+          Courses
         </a>
       </span>
       |
       <span>
-        <a [routerLink]=" ['./detail'] ">
-          Detail
+        <a [routerLink]=" ['./add-edit-course'] ">
+          Add-edit course
         </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./about'] ">
-          About
-        </a>
-      </span>
-    </nav>
+      </span>     
+      
+    </nav>   
 
     <main>
       <router-outlet></router-outlet>
@@ -56,12 +51,13 @@ import { AppState } from './app.service';
         </a>
       </div>
     </footer>
+
   `
 })
 export class AppComponent {
-  angularclassLogo = 'assets/img/angularclass-avatar.png';
-  name = 'Angular 2 Webpack Starter';
-  url = 'https://twitter.com/AngularClass';
+  // angularclassLogo = 'assets/img/angularclass-avatar.png';
+  // name = 'Angular 2 Webpack Starter';
+  // url = 'http://udaff.com';
 
   constructor(
     public appState: AppState) {
