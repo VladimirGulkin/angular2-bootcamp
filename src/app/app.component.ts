@@ -30,8 +30,14 @@ import { AppState } from './app.service';
       </span>
       |
       <span>
-        <a [routerLink]=" ['./add-edit-course'] ">
-          Add-edit course
+        <a [routerLink]=" ['./courses/new'] ">
+          Add course
+        </a>
+      </span>      
+      | 
+      <span>
+        <a [routerLink]=" ['./courses/:id'] ">
+          Edit course
         </a>
       </span>     
       
